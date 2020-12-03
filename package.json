@@ -1,0 +1,52 @@
+{
+  "name": "react-unit-testing",
+  "version": "1.0.0",
+  "description": "A sample unit testing setup for React using GitHub actions.",
+  "scripts": {
+    "test": "jest",
+    "start": "NODE_ENV=development webpack-dev-server",
+    "build": "NODE_ENV=production webpack"
+  },
+  "jest": {
+    "verbose": true,
+    "roots": [
+      "src"
+    ],
+    "testRegex": "\\.test\\.jsx?$",
+    "transform": {
+      "\\.jsx?$": "babel-jest"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/course-one/react-unit-testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/course-one/react-unit-testing/issues"
+  },
+  "homepage": "https://github.com/course-one/react-unit-testing#readme",
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-export-default-from": "^7.12.1",
+    "@babel/plugin-proposal-export-namespace-from": "^7.12.1",
+    "@babel/plugin-transform-async-to-generator": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-react": "^7.12.7",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@types/jest": "^26.0.15",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^8.0.6",
+    "html-webpack-plugin": "^4.5.0",
+    "jest": "^26.6.3",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.8.0"
+  }
+}
